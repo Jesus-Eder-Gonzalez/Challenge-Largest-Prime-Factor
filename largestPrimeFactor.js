@@ -18,7 +18,7 @@ exports.largestPrimeFactor = function (n) {
       if (!factorArray.some(number => i % number === 0)) {
         factorArray.push(i);
         primeNumber = i;
-        end = parseInt(end / i);
+        end = (end / i);
       }
     }
   }
