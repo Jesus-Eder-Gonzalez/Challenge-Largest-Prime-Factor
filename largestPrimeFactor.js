@@ -1,7 +1,6 @@
 'use strict';
 exports.largestPrimeFactor = function (n) {
   let primeNumber;
-  let searchSet = parseInt(Math.pow(n, (.5)));
   let factorArray = [];
 
   if (n > 2) {
@@ -12,16 +11,15 @@ exports.largestPrimeFactor = function (n) {
     primeNumber = 1;
   }
 
-  for (let i = primeNumber; i < searchSet; i += 2) {
+  for (let i = primeNumber; i <= n; i += 2) {
 
     if (n % i === 0) {
       if (!factorArray.some(number => i % number === 0)) {
         factorArray.push(i);
         primeNumber = i;
       }
+
     }
-
-
 
   }
 
