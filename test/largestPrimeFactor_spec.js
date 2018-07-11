@@ -9,10 +9,10 @@ describe("The largest Prime Factor", function () {
     primeNumber.should.equal(29);
   });
 
-  // it("for 600851475143 should be 6857", function () {
-  //   var primeNumber = primeModule.largestPrimeFactor(600851475143);
-  //   primeNumber.should.equal(6857);
-  // });
+  it("for 600851475143 should be 6857", function () {
+    var primeNumber = primeModule.largestPrimeFactor(600851475143);
+    primeNumber.should.equal(6857);
+  });
 
   it("for 22 should be 11", function () {
     var primeNumber = primeModule.largestPrimeFactor(22);
@@ -40,8 +40,23 @@ describe("The largest Prime Factor", function () {
   });
 
   it("for 2993 should be 73", function () {
-    var primeNumber = primeModule.largestPrimeFactor(133);
-    primeNumber.should.equal(19);
+    var primeNumber = primeModule.largestPrimeFactor(2993);
+    primeNumber.should.equal(73);
+  });
+
+  it("for 3421 should be 311", function () {
+    var primeNumber = primeModule.largestPrimeFactor(3421);
+    primeNumber.should.equal(311);
+  });
+
+  it("for 15000 should be 5", function () {
+    var primeNumber = primeModule.largestPrimeFactor(15000);
+    primeNumber.should.equal(5);
+  });
+
+  it("for 785439 should be 443", function () {
+    var primeNumber = primeModule.largestPrimeFactor(785439);
+    primeNumber.should.equal(443);
   });
 
 });
